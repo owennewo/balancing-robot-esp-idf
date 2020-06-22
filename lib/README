@@ -1,0 +1,12 @@
+## Overview
+This is a rewrite of Wouter Klopps excellent balancing robot: https://gitlab.com/kloppertje/balancingrobot
+
+My motivations for the rewrite are:
+ - to fully understand Wouter's code
+   - I'll be reworking some libraries e.g. FlySkyI6 to Serial2 to UART
+ - to improve my very poor c++ 
+ - to move away from arduino framework to esp-idf framework
+   - Everything will be FreeRtos xTask
+   - Tasks will communicate with each other using xQueues
+ - the hope is that this will lead to more modular code and easier to swap things out for future projects
+
